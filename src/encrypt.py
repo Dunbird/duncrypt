@@ -18,6 +18,7 @@ def encrypt_file(file_path, key, output_path):
 
     compressed_data = compress_file(file_path)
 
+
     iv = os.urandom(12)
 
     cipher = Cipher(algorithms.AES(key), modes.GCM(iv), backend=default_backend())

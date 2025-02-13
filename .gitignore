@@ -3,3 +3,4 @@ testjpg.jpg
 testfile.txt
 encryptedfile.dun
 src/__pycache__/image_process.cpython-312.pyc
+*.dun
