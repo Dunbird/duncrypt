@@ -30,6 +30,11 @@ def encrypt_file(file_path, key, output_path):
         output_file.write(iv)
         output_file.write(encrypted_data)
         output_file.write(encryptor.tag)
+#        I would not recommend printing the key, iv, and tag in a production environment, but it is useful for debugging
+#        print(f"IV: {iv.hex()} Length: {len(iv)}")
+#        print(f"Tag: {encryptor.tag.hex()} Length: {len(encryptor.tag)}")
+#        print(f"Key: {key.hex()} Length: {len(key)}")
+
     print(f"File encrypted and saved as {output_file}")
 
 
