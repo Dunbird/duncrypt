@@ -8,3 +8,6 @@ src/__pycache__/image_process.cpython-313.pyc
 decry.txt
 tests/test.txt
 /tests
+*.txt
+*.jpg
+*.png
